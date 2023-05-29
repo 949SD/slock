@@ -15,6 +15,7 @@ depends=(
 )
 makedepends=()
 provides=('slock')
+conflicts=('slock')
 source=("$pkgname::git+$url")
 md5sums=() #autofill using updpkgsums
 sha256sums=('SKIP')
