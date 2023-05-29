@@ -7,8 +7,12 @@ pkgdesc="simple screen locker"
 arch=('x86_64')
 url="https://github.com/dk949/$_pkgname"
 license=('MIT')
-depends=()
-optdepends=('libxinerama: only used if installed')
+depends=(
+    'libx11'
+    'libxext'
+    'libxrandr'
+    'libxcrypt'
+)
 makedepends=()
 provides=('slock')
 source=("$pkgname::git+$url")
